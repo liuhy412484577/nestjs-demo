@@ -2,7 +2,7 @@ version: '3.0'
 
 services:
 
-  sql-demo:
+  sql_demo:
     container_name: mysql #容器名称
     image: daocloud.io/library/mysql:8.0.20 # 使用官方镜像
     # command: redis-server --appendonly yes # 开启redis数据持久化
@@ -36,10 +36,7 @@ services:
     networks:
       - my-server_demo
     depends_on: # node服务依赖于mysql
-      - sql-demo
-    # environment:
-    #   MYSQL_HOST: 'mysql'
-    # extra_hosts:
-    #   - "host.docker.internal:172.0.0.1"
+      - sql_demo
+
 networks:
   my-server_demo:

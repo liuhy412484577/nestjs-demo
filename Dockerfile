@@ -47,6 +47,6 @@ RUN cd /app && rm -rf /app/dist &&  npm run build
 
 # 启动服务
 # "start:prod": "cross-env NODE_ENV=production node ./dist/src/main.js",
-CMD npm run start:dev
+CMD npm run start:prod
 
 EXPOSE 3000

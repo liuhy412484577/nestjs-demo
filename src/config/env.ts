@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const isProd = process.env.NODE_ENV === 'prod';
-
+const isProd = process.env.NODE_ENV === 'production';
+console.debug('==NODE_ENV===', process.env.NODE_ENV);
 const getEnvFilePath = () => {
     const localEnv = path.resolve('.env');
     const prodEnv = path.resolve('.prod.env');
